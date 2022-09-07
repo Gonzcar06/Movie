@@ -1,0 +1,31 @@
+
+# Base
+pytz
+python-slugify
+Pillow
+psycopg2 --no-binary psycopg2
+
+# Django
+django>=2.0.10
+
+# Environment
+django-environ
+
+# Django REST Framework
+djangorestframework==3.13.1
+
+# JWT
+pyjwt==1.7.1
+
+# Passwords security
+argon2-cffi
+
+# Static files
+whitenoise
+
+# Celery
+tornado
+redis
+django-redis
+Celery
+flower
