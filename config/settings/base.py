@@ -18,6 +18,8 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
+AUTH_USER_MODEL = 'auth.User'
+
 # DATABASES
 DATABASES = {
     'default': env.db('DATABASE_URL'),
@@ -42,7 +44,16 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = [
     'rest_framework',
+    'rest_framework.authtoken',
+    'dj_rest_auth',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'dj_rest_auth.registration',
 ]
+
+SITE_ID = 1
+
 LOCAL_APPS = [
     'cride.movies.apps.MoviesAppConfig',
     'cride.persons.apps.PersonsAppConfig',

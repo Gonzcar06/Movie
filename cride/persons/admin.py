@@ -15,6 +15,7 @@ class PersonAdmin(admin.ModelAdmin):
         'first_name',
         'last_name',
         'aliases',
+        'gender',
 
     )
 

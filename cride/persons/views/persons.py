@@ -1,21 +1,15 @@
 """Persons views."""
 
 # Django REST Framework
-from rest_framework import mixins, status, viewsets
-from rest_framework.decorators import action
-from rest_framework.response import Response
+from rest_framework import mixins, viewsets
 
 # Serializers
 from cride.persons.serializers import (
     PersonModelSerializer,
-    #PersonCreateSerializer,
 )
-
-from cride.movies.serializers import MovieModelSerializer
 
 # Models
 from cride.persons.models import Person
-from cride.movies.models import Movie
 
 
 class PersonViewSet(mixins.RetrieveModelMixin,
@@ -24,8 +18,9 @@ class PersonViewSet(mixins.RetrieveModelMixin,
                     viewsets.GenericViewSet):
     """Person view set."""
 
-    queryset = Person.objects.all()
+    #queryset = Person.objects.all()
     serializer_class = PersonModelSerializer
+    lookup_field='first_name'
 
     def get_queryset(self):
         """Restrict list to public-only."""
@@ -36,4 +31,3 @@ class PersonViewSet(mixins.RetrieveModelMixin,
         person = serializer.save()
         return person
 
-    

@@ -1,2 +1,3 @@
 from .movies import Movie
-from .roles import Role
+from .roles import Roles
+from .genres import Genre

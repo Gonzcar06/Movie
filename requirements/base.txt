@@ -7,6 +7,9 @@ psycopg2 --no-binary psycopg2
 
 # Django
 django>=2.0.10
+dj-rest-auth
+django-import-export
+django-allauth
 
 # Environment
 django-environ
