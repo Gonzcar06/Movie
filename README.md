@@ -15,9 +15,10 @@ the code up to the course progress in the [releases section](git@github.com:Gonz
 on how to get this project up and running locally.
 If you don't want to do it, just run:
 
-bash
+```bash
 sudo docker compose -f local.yml build
 sudo docker-compose -f local.yml up
+```
 
 ## Contributing
 
