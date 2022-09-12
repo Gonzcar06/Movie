@@ -10,7 +10,7 @@ In order to complete this, you must create a RESTful interface that will provide
 company’s database.
 
 You can review
-the code up to the course progress in the [releases section](https://github.com/pablotrinidad/cride-platzi/releases)
+the code up to the course progress in the [releases section](git@github.com:Gonzcar06/Movie.git)
 
 on how to get this project up and running locally.
 If you don't want to do it, just run:
